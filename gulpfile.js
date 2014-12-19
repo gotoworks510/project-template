@@ -18,7 +18,7 @@ gulp.task('compass', function() {
 	.pipe(plumber())
     .pipe(compass({
       config_file: './config.rb',
-      css: 'css',
+      css: 'htdocs/wp-content/themes/senna/css/',
       sass: 'sass'
     }))
     .pipe(frontnote({
