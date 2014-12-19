@@ -1,0 +1,46 @@
+/**
+ * Key frames animations
+ */
+
+@mixin keyframe($animation-name) {
+	@-webkit-keyframes $animation-name {
+		@content;
+	}
+	@-moz-keyframes $animation-name {
+		@content;
+	}
+	@-o-keyframes $animation-name {
+		@content;
+	}
+	@keyframes $animation-name {
+		@content;
+	}
+}
+
+@mixin animation ($delay, $duration, $animation, $fillmode) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+    -webkit-animation-fill-mode: $fillmode;
+
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+    -moz-animation-fill-mode: $fillmode;
+
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-name: $animation;
+    -o-animation-fill-mode: $fillmode;
+
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+    animation-fill-mode: $fillmode;
+}
+
+@mixin easyanimation ($duration, $easyanimation) {
+    -webkit-transition: all $duration $easyanimation;
+    -moz-transition: all $duration $easyanimation;
+    -o-transition: all $duration $easyanimation;
+}

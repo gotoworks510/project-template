@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+// Compass
+@import "compass";
+
+// Normalize
+@import "reset/reset";
+// Helper such as mixins, placeholder
+@import "helpers/mixins";
+@import "helpers/placeholders";
+
+// Base
+@import "base/settings";
+// Partials such as header, content, footer
+@import "partials/cssset";
+@import "partials/bgset";
+@import "partials/header";
+@import "partials/sidebar";
+@import "partials/content";
+@import "partials/footer";
+

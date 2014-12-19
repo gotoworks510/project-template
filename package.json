@@ -1,0 +1,22 @@
+{
+  "name": "webya2015",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webya"
+  ],
+  "author": "senna",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^1.8.0",
+    "gulp": "^3.8.10",
+    "gulp-compass": "^2.0.3",
+    "gulp-frontnote": "^0.1.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-sass": "^1.2.4"
+  }
+}

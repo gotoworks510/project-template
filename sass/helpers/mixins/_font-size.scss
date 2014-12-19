@@ -1,0 +1,14 @@
+/**
+/**
+ * Font size with rem
+ * URL: http://snook.ca/archives/html_and_css/font-size-with-rem
+ */
+@mixin font-size($size-value, $is-important: false) {
+	@if $is-important {
+		font-size: $size-value + px !important;
+		font-size: ($size-value / 10) + rem !important;
+	} @else {
+		font-size: $size-value + px;
+		font-size: ($size-value / 10) + rem;
+	}
+}
